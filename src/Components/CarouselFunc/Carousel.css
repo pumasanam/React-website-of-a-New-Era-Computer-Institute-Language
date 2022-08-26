@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Varela+Round&display=swap');
+.Carousel{
+    width: 100%!important;
+    height: 100vh!important;
+
+}
+.carousel_item{
+    position: relative;
+}
+
+.carousel_item:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(14, 14, 14, 0.615);
+    opacity: 0.9;
+}
+
+ .carousel_item .caption{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+
+} 
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .carousel_item .caption h6{
+        font-size: 1.5rem!important;
+    }
+
+    .carousel_item .caption h5{
+        font-size: 1.9rem!important;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .carousel_item .caption h6{
+        font-size: 1.2rem!important;
+    }
+
+    .carousel_item .caption h5{
+        font-size: 1.3rem!important;
+    }
+
+    .carousel_item img{
+        width: 80vh!important;
+    }
+}

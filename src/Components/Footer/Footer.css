@@ -1,0 +1,134 @@
+footer{
+    width: 100%;
+    padding: 5rem 5rem 4rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    background-color: #34495e;
+    color: #bdc3c7;
+    background-color: #151515;
+}
+
+.footer_list img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.footer_list h6{
+    color: #dc3545;
+    font-size: 1.1rem;
+    margin: 8px 0px 4px 0px;
+}
+
+.first_footer_list p{
+  margin-bottom: 7px;
+  line-height: 25px;
+}
+
+.footer_list h4{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.footer_list .footerul ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer_list .footerul ul li .nav_link{
+    margin-bottom: 8px;
+    display: block;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    font-weight: bold;
+    text-decoration: none;
+    color: #bdc3c7;
+    text-align: center;
+}
+
+.footer_list .footerul ul li .nav_link:hover{
+    color: #dc3545;
+}
+
+.footer_list .footer_link{
+    display: flex;
+    margin-bottom: 15px;
+} 
+
+.footer_list .footer_link .fa{
+    color: #dc3545;
+    font-size: 1.7rem;
+    margin-right: 10px;
+}
+
+.footer_list .footer_link .fa-map-marker{
+    margin-right: 15px;
+}
+
+
+.social_links a .fa{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0px 5px;
+    border-radius: 50%;
+    background-color: #ecf0f1;
+    color:#dc3545;
+    transition: 0.3s ease;
+}
+
+.social_links a .fa-facebook-official{
+    margin-left: 0px!important;
+}
+
+.social_links a .fa:hover{
+    background-color: #dc3545;
+    color: #ecf0f1;
+}
+
+
+
+@media screen and (max-width:812px){
+    footer{
+        padding: 5rem 3rem 4rem 3rem!important;
+    }
+}
+
+
+@media screen and (max-width:769px){
+    footer{
+        padding: 5rem 2rem 4rem 2rem!important;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+
+
+@media screen and (max-width:500px){
+    footer{
+        padding: 4rem 1rem 2rem 1rem!important;
+        flex-direction: column!important;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .footer_list h4{
+        text-align: left!important;
+    }
+    .footer_list .footerul ul li{
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer_list .footerul ul li .nav_link{
+        text-align: left;
+    }
+    
+}
